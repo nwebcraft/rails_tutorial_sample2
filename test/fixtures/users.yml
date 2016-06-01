@@ -1,4 +1,27 @@
 makoto:
   name: Makoto Nishijima
-  email: makoto@example.comp
+  email: makoto@example.com
   password_digest: <%= User.digest('password') %>
+  admin: true
+
+rumiko:
+  name: Rumiko Nishijima
+  email: rumiko@example.com
+  password_digest: <%= User.digest('password') %>
+
+yuu:
+  name: Yuu Nishijima
+  email: yuu@example.com
+  password_digest: <%= User.digest('password') %>
+
+yume:
+  name: Yume Nishijima
+  email: yume@example.com
+  password_digest: <%= User.digest('password') %>
+
+<% 30.times do |n| %>
+user_<%= n %>:
+  name:  <%= "User #{n}" %>
+  email: <%= "user-#{n}@example.com" %>
+  password_digest: <%= User.digest('password') %>
+<% end %>
