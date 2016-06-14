@@ -1,0 +1,19 @@
+one:
+  follower: makoto
+  followed: yuu
+
+two:
+  follower: makoto
+  followed: yume
+
+three:
+  follower: yuu
+  followed: makoto
+
+four:
+  follower: rumiko
+  followed: makoto
+
+five:
+  follower: yume
+  followed: makoto
